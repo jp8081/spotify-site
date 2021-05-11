@@ -25,6 +25,8 @@ footer, header, hgroup, menu, nav, section {
 }
 body {
 	line-height: 1;
+	font-family: 'DM Sans', sans-serif;
+	color: white;
 }
 ol, ul {
 	list-style: none;
@@ -48,11 +50,104 @@ main {
     height: 88vh;
     display: flex;
     justify-content: center;
+	flex-direction: row;
 
 }
 
+a {
+	color: rgb(167, 167, 167);
+	text-decoration: none;
+	font-weight: 700;
+}
+
+.navLeft_item:hover .hover-white {
+	color: white;
+}
+
+.navLeft_Container {
+	background-color: black;
+	min-width: 250px;
+	max-width: 250px;
+	height: 88vh;
+}
+
+.navLeft_sub_Container {
+	height: 100%;
+	padding: 25px 15px 0px 5px;
+}
+
+.navMenuBtn_Left {
+	padding: 0px 15px 0px 15px;
+	height: 30px;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+}
+
+.mainNavPanel {
+	margin-bottom: 10%;
+}
+
+.navLeft_top {
+	height: 48%;
+}
+
+.navLeft_bottom {
+	height: 52%;
+	overflow: auto;
+}
+
+.playlistName {
+	color: rgb(167, 167, 167);
+	display: block;
+	margin-bottom: 10px;
+	font-weight: 400;
+}
+
+.playlistName:hover {
+	color: white;
+}
+
+.navLeft_item {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	padding: 7px 15px 7px 15px;
+	border-radius: .2em;
+}
+
+.navLeft_item:hover {
+	color: white;
+}
+
+.hrLeftNav {
+	border-color: rgb(167, 167, 167);
+	margin-bottom: 20px;
+
+}
+
+.navLeft_item:hover {
+	background-color: #282828;
+}
+
+.navLeft_text {
+	margin-left: 15px;
+}
+
+.playlistList {
+	height: auto;
+	padding: 0px 15px 0px 15px;
+}
+
+.navLeft_item span:hover {
+	color: white;
+}
+
+.material-icons {
+}
+
 .centerContent {
-    background-color: aquamarine;
+    background-color: #121212;
     width: 65vw;
     height: 88vh;
     display: flex;
@@ -60,9 +155,52 @@ main {
 
 }
 
+
+.navRight_Container {
+	background-color: black;
+	width: 250px;
+	height: 88vh;
+}
+
 footer {
-    background-color: blue;
+    background-color: #181818;
     height: 12vh;
     width: 100%;
+	position: fixed;
 
+}
+
+/* ------------------ breakpoints ------------------*/
+
+/* Medium devices (tablets, less than 992px) */
+
+@media (max-width: 992px) {
+	.navRight_Container {
+		background-color: black;
+		width: 85px;
+		height: 88vh;
+}
+
+}
+
+
+/* iPad */
+@media (max-width: 768px) {
+
+	.navLeft_Container {
+		overflow: hidden;
+	}
+	
+	.navRight_Container {
+		display: none;
+	}
+
+	.centerContent {
+		background-color: #121212;
+		width: 768px;
+		height: 88vh;
+		display: flex;
+		align-content: center;
+
+	}
 }

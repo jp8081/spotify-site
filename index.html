@@ -5,28 +5,78 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
     <title>Spotify Clone</title>
 </head>
 <body>
 
-    <!-- Left Nav Panel-->
-    <nav class="navLeft_Container">   
-        <div class="navbarLeft">
-
-        </div>
-        <div class="mainNavPanel">
-
-        </div>
-        <div class="subNavs">
-
-        </div>
-        <div class="playlistList">
-
-        </div>
-    </nav>
-
     <!-- Main Screen -->
     <main>
+        <!-- Left Nav Panel-->
+        <nav class="navLeft_Container">   
+            <div class="navLeft_sub_Container">
+                <div class="navLeft_top">
+                    <div class="navMenuBtn_Left">
+                            <a href="#"><span style="font-size:36px;" class="material-icons">more_horiz</span></a>
+                    </div>
+                    <div class="mainNavPanel">
+                        <div class="navLeft_item">
+                            <a href="#"><span style="font-size:25px;" class="material-icons hover-white">home</span></a>
+                            <a class ="navLeft_text hover-white" href="#"><h2>Home</h2></a>
+                        </div>
+                        <div class="navLeft_item">
+                            <a href="#"><span style="font-size:25px;" class="material-icons hover-white">search</span></a>
+                            <a class ="navLeft_text hover-white" href="#"><h2>Search</h2></a>
+                        </div>      
+                        <div class="navLeft_item">
+                            <a href="#"><span style="font-size:25px;" class="material-icons hover-white">folder</span></a>
+                            <a class ="navLeft_text hover-white" href="#"><h2>Your Library</h2></a>
+                        </div>     
+                    </div>
+                    <div class="subNavs">
+                        <div class="navLeft_item">
+                            <a href="#"><span style="font-size:25px;" class="material-icons hover-white">add_box</span></a>
+                            <a class ="navLeft_text hover-white" href="#"><h2>Create Playlist</h2></a>
+                        </div>
+                        <div class="navLeft_item">
+                            <a href="#"><span style="font-size:25px;" class="material-icons hover-white">favorite</span></a>
+                                <a class ="navLeft_text hover-white" href="#"><h2>Liked Songs</h2></a>
+                        </div>
+                    </div>
+                </div>    
+                <div class="navLeft_bottom">
+                    <div class="playlistList">
+                        <hr class="hrLeftNav"></hr>
+                       <a class="playlistName" href="#" >ave</a>
+                       <a class="playlistName" href="#" >428</a>
+                       <a class="playlistName" href="#" >Good Vibes Only</a>
+                       <a class="playlistName" href="#" >drinking dance playlist with emma</a>
+                       <a class="playlistName" href="#" >civic</a>
+                       <a class="playlistName" href="#" >.</a>
+                       <a class="playlistName" href="#" >One More Time Radio</a>
+                       <a class="playlistName" href="#" >sunday</a>
+                       <a class="playlistName" href="#" >hype track playlist</a>
+                       <a class="playlistName" href="#" >running playlist pt. 2</a>
+                       <a class="playlistName" href="#" >green bean</a>
+                       <a class="playlistName" href="#" >simulation (2)</a>
+                       <a class="playlistName" href="#" >us (2)</a>
+                       <a class="playlistName" href="#" >Living Room Flow</a>
+                       <a class="playlistName" href="#" >songwriting</a>
+                       <a class="playlistName" href="#" >So You Haven't Radicalized Yet?</a>
+                       <a class="playlistName" href="#" >run</a>
+                       <a class="playlistName" href="#" >San Holo: Complete Collection</a>
+                       <a class="playlistName" href="#" >very vibrant playlist</a>
+                       <a class="playlistName" href="#" >21</a>
+                       <a class="playlistName" href="#" >telecaster</a>
+                       <a class="playlistName" href="#" >gtr</a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+
         <!-- Center Content-->
         <div class="centerContent">
             <nav class="navbarMiddle">
@@ -94,18 +144,20 @@
             </div>
 
         </div>
+
+        <!-- Right Nav Panel-->
+        <nav class="navRight_Container">
+            <div class="navRight_Container">
+
+            </div>
+            <div class="friendsList_Container">
+
+            </div>
+
+        </nav>        
     </main>
 
-    <!-- Right Nav Panel-->
-    <nav class="navRight_Container">
-        <div class="navRight_Container">
 
-        </div>
-        <div class="friendsList_Container">
-
-        </div>
-
-    </nav>
 
     <!-- Bottom Play Interface-->
     <footer>
