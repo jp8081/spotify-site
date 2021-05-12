@@ -71,6 +71,10 @@ a {
 	color: white;
 }
 
+.hover-white-single:hover {
+	color: white;
+}
+
 .navLeft_Container {
 	background-color: black;
 	min-width: 250px;
@@ -92,6 +96,7 @@ a {
 	display: flex;
 	flex-direction: row;
 	align-items: center;
+	justify-content: space-between;
 }
 
 .mainNavPanel {
@@ -124,6 +129,31 @@ a {
 	border-radius: .2em;
 }
 
+
+
+.stackVertical {
+	display: flex;
+	flex-direction: column;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+
+.stackVertical2 {
+	display: flex;
+	flex-direction: column;
+	overflow: auto;
+	text-overflow: ellipsis;
+}
+
+.stackVertical3 {
+	display: flex;
+	flex-direction: column;
+}
+
+.flex1 {
+	flex: 1 0 100%;
+}
+
 .navLeft_item:hover {
 	color: white;
 }
@@ -138,8 +168,79 @@ a {
 	background-color: #282828;
 }
 
+.navRight_Container .navLeft_item:hover {
+	background-color: black;
+}
+
 .navLeft_text {
 	margin-left: 10px;
+}
+
+.rightMargin {
+	margin-right: 10px;
+	margin-left: 0px;
+}
+
+.noMargin {
+	margin-left: 0px;
+}
+
+.Three_Column_div {
+	width: 400px;
+
+	text-overflow: ellipsis;
+	display: flex;
+	flex-direction: row;
+	align-items: baseline;
+	max-height: 12px;
+    width: 400px;
+	margin-bottom: 5px;
+}
+
+
+
+.Three_Column_div:nth-of-type(3) {
+	max-height: 20px;
+}
+
+.Three_Column_div:nth-of-type(1) {
+	justify-content: space-between;
+	max-width: 145px;
+}
+
+.navMenuBtn_Right {
+	margin-bottom: 30px;
+}
+
+.marginRecord {
+	margin-right: 3px;
+	position: relative;
+	top: 2px;
+}
+
+.makeInline {
+	display: inline-block;
+}
+
+.dot {
+	background-color:white;
+	width: 3px;
+	height: 3px;
+	border-radius: 50%;
+}
+
+.sub_Three_Column_div_end_1 {
+	/* max-width: 60%;
+	text-overflow: ellipsis;
+	overflow: hidden;
+	max-height: 12px; */
+}
+
+.sub_Three_Column_div_end_2 {
+	/* max-width: 30%;
+	text-overflow: ellipsis;
+	overflow: hidden;
+	max-height: 12px; */
 }
 
 .playlistList {
@@ -263,6 +364,7 @@ footer {
 .controlPanel_artistName {
 	font-size: 11px;
 	font-weight: 400;
+	color:rgb(167, 167, 167);
 }
 
 .interfaceControls_Container {
@@ -270,7 +372,6 @@ footer {
 	flex-direction: row;
 	align-items: center;
 	width: 208px;
-	height: 50px;
 	margin-right: 20px;
 	justify-content: space-between;
 	padding-right: 
@@ -291,6 +392,12 @@ footer {
 .volume_div {
 	display: flex;
 	flex-direction: row;
+}
+
+.profilePic {
+	max-width: 45px;
+	height: auto;
+	border-radius: 50%
 }
 
 /* ------------------ breakpoints ------------------*/
